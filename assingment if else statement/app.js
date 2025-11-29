@@ -107,22 +107,236 @@
 
 
 
-let login = prompt("are you logged in. Answer in | yes or no |")
-let plan = prompt("are you on Premium plan or free plan.")
-let loggedin
-let premium
-if(login == "yes" || login == "Yes"){
-    loggedin = true
-}
-else {
-    loggedin = false
-}
+// let login = prompt("are you logged in. Answer in | yes or no |")
+// let plan = prompt("are you on Premium plan or free plan.")
+// let loggedin
+// let premium
+// if(login == "yes" || login == "Yes"){
+//     loggedin = true
+// }
+// else {
+//     loggedin = false
+// }
 
-if(plan == "premium" || plan == "Premium"){
-    premium = true
-}
-else{
-    premium = false
-}
+// if(plan == "premium" || plan == "Premium"){
+//     premium = true
+// }
+// else{
+//     premium = false
+// }
+
+
+
+
+// 6 Question
+
+
+// let price = 1200;
+// let stock = 5;
+// let isMember = true;
+
+// if (price > 1000 && stock > 0 && isMember) {
+//     alert("Buy now with discount");
+// } 
+// else if (stock > 0) {
+//     alert("Buy now");
+// }
+// else if (stock === 0) {
+//     alert("Out of stock");
+// }
+// else {
+//     alert("Invalid product");
+// }
+
+
+
+// 7 question
+
+// let hoursWorked = 45;
+// let isWeekend = false;
+
+// if (hoursWorked > 40 && !isWeekend) {
+//     alert("Overtime");
+// }
+// else if (hoursWorked > 0 && isWeekend) {
+//     alert("Weekend work");
+// }
+// else if (hoursWorked <= 40 && hoursWorked > 0) {
+//     alert("Regular hours");
+// }
+// else if (hoursWorked === 0) {
+//     alert("No work");
+// }
+
+
+
+
+// 8 question 
+
+
+// et age = 15;
+// let gender = "male";
+
+// if (age >= 13 && age <= 19 && gender === "male") {
+//     alert("Teen Male");
+// }
+// else if (age >= 13 && age <= 19 && gender === "female") {
+//     alert("Teen Female");
+// }
+// else if (age >= 20) {
+//     alert("Adult");
+// }
+// else if (age < 13) {
+//     alert("Child");
+// }
+// else {
+//     alert("Invalid input");
+// }
+
+
+// 9 question 
+
+
+
+// let temp = 42;
+// let humidity = 65;
+
+// if (temp >= 40 && humidity >= 60) {
+//     alert("Heatwave Alert");
+// }
+// else if (temp >= 40 && humidity < 60) {
+//     alert("Hot and Dry");
+// }
+// else if (temp <= 20) {
+//     alert("Cool Weather");
+// }
+// else {
+//     alert("Moderate");
+// }
+
+
+// 10 question
+// let score = 85;
+
+// if (score >= 90 && score <= 100) {
+//     alert("Excellent");
+// }
+// else if (score >= 70 && score <= 89) {
+//     alert("Good");
+// }
+// else if (score >= 50 && score <= 69) {
+//     alert("Average");
+// }
+// else if (score >= 30 && score <= 49) {
+//     alert("Poor");
+// }
+// else if (score < 30 && score >= 0) {
+//     alert("Fail");
+// }
+// else {
+//     alert("Invalid Score");
+// }
+
+// 11 question
+
+// let isLoggedIn = true;
+// let isEnrolled = false;
+// let isBanned = false;
+
+// if (!isLoggedIn) {
+//     alert("Please log in");
+// }
+// else if (isBanned) {
+//     alert("User is banned");
+// }
+// else if (!isEnrolled) {
+//     alert("Enroll in course first");
+// }
+// else {
+//     alert("Access granted");
+// }
+
+
+// 12 question 
+// let speed = 110;
+// let hasLicense = true;
+
+// if (speed > 120) {
+//     alert("License suspended");
+// }
+// else if (speed >= 100 && speed <= 120) {
+//     alert("Warning");
+// }
+// else if (speed <= 100 && hasLicense) {
+//     alert("Normal driving");
+// }
+// else {
+//     alert("Driving without license");
+// }
+
+// 13 question
+
+
+// let paymentStatus = "complete";
+// let shipped = false;
+
+// if (paymentStatus === "complete" && shipped) {
+//     alert("Order on the way");
+// }
+// else if (paymentStatus === "complete" && !shipped) {
+//     alert("Preparing your order");
+// }
+// else if (paymentStatus === "pending") {
+//     alert("Awaiting payment");
+// }
+// else if (paymentStatus === "failed") {
+//     alert("Payment failed");
+// }
+// else {
+//     alert("Invalid status");
+// }
+
+// 14 Question
+
+
+// let level = 50;
+// let charging = true;
+
+// if (level === 100) {
+//     alert("Fully Charged");
+// }
+// else if (level < 100 && charging) {
+//     alert("Charging...");
+// }
+// else if (level < 20 && !charging) {
+//     alert("Low Battery");
+// }
+// else {
+//     alert("Battery OK");
+// }
+
+// 15 Question 
+
+
+// let browser = "Chrome";
+// let device = "Desktop";
+
+// if (browser === "Chrome" && device === "Desktop") {
+//     alert("Full features enabled");
+// }
+// else if (browser === "Chrome" && device === "Mobile") {
+//     alert("Limited mobile features");
+// }
+// else {
+//     alert("Please switch to Chrome");
+// }
+
+
+
+
+
+
+
+
 
 
