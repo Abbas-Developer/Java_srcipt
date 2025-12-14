@@ -268,31 +268,36 @@
 // ------------------------------------------------------------------------------------------
 
 // 23. Write a loop that calculates the average of numbers in an array [20, 30, 40, 50].
-
-
-
-
-
-
-
-
-
-
+// let numbers = [20, 30, 40, 50];
+//         let total = 0;
+//         for (let i = 0; i < numbers.length; i++) {
+//             total += numbers[i];
+//         }
+//         const average = total / numbers.length;
+//         console.log("The average is:", average);
 // ------------------------------------------------------------------------------------------
 
 // 24. Given an array [2, 4, 6, 8, 10], use a loop to create a new array where each value is
 // multiplied by 3.
-
-
-
-
-
-
-
-
+// let numbers = [2, 4, 6, 8, 10];
+// let multiplied = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     multiplied.push(numbers[i] * 3);
+// }
+// console.log("Original array:", numbers);
+// console.log("Result:", multiplied);
 // ------------------------------------------------------------------------------------------
 
 // 25. Loop through an array [1, 3, 5, 7, 9] and count how many elements are greater than 4.
+let array = [1, 3, 5, 7, 9];
+let count =0;
+for (let i =0;i < array.length; i = i++){
+    if (array[i] > 4 ){
+        count;
+    }
+}
+console.log("Array:", numbers);
+console.log("Number of elements greater than 4:", count);
 
 
 
