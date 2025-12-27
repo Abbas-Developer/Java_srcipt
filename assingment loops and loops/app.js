@@ -289,43 +289,46 @@
 // ------------------------------------------------------------------------------------------
 
 // 25. Loop through an array [1, 3, 5, 7, 9] and count how many elements are greater than 4.
-let array = [1, 3, 5, 7, 9];
-let count =0;
-for (let i =0;i < array.length; i = i++){
-    if (array[i] > 4 ){
-        count;
-    }
-}
-console.log("Array:", numbers);
-console.log("Number of elements greater than 4:", count);
-
-
-
-
-
-
-
-
-
-
+// let array = [1, 3, 5, 7, 9];
+// let count = 0;
+// for (let i = 0; i < array.length; i++) {  
+//     if (array[i] > 4) {
+//         count++;  
+//     }
+// }
+// console.log("Array:", array);  
+// console.log("Number of elements greater than 4:", count);
 // ------------------------------------------------------------------------------------------
 
 // 26. Given an array [10, 15, 20, 25, 30], use a loop to add only the numbers divisible by 5.
+// let arr = [10, 15, 20, 25, 30];
+// let sum = 0;
 
-
-
-
-
-
-
-
-
-
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 5 === 0) {
+//         sum += arr[i];
+//     }
+// }
+// console.log(sum);
 // ------------------------------------------------------------------------------------------
 
 // 27. Write a loop that checks if a number 25 exists in the array [10, 20, 30, 40, 25].
 
+let arr = [10, 20, 30, 40, 25];
+let found = false;
 
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 25) {
+        found = true;
+        break;
+    }
+}
+
+if (found) {
+    console.log("25 exists in the array");
+} else {
+    console.log("25 does not exist in the array");
+}
 
 
 
