@@ -145,18 +145,18 @@
 // ---------------------------------------------------------------------------
 // 20. Alternate Case Converter
 // Convert a string to alternating case (e.g., "hello" → "HeLlO").
-function alternate(str){
+// function alternate(str){
 
-}
+// }
 
 
 // ---------------------------------------------------------------------------
 // 21. Title Casing a Sentence
 // Convert a full sentence so that the first letter of each word is capitalized.
-function capitalize(str){
+// function capitalize(str){
 
 
-}
+// }
 
 
 // ---------------------------------------------------------------------------
@@ -286,3 +286,143 @@ function wrap(str){
 // ---------------------------------------------------------------------------
 // 32. Detect Repeated Characters
 // Return all characters that appear more than once in a string.
+// function repeated(str){
+//     let Count = {};
+//     let count1 = [];
+//     for(let i=0;i<str.length;i++){
+//         let char = str.charAt(i);
+//         if(Count[char]){
+//             Count[char]++;
+//         }
+//         else{
+//             Count[char] = 1;
+//         }
+//     }
+//     for(let char in Count){
+//         if(Count[char] > 1){
+//             count1.push(char);
+//         }
+//     }
+//     return count1;
+// }
+// console.log(repeated("programming"));
+// ---------------------------------------------------------------------------
+// 33. Compress Repeating Characters
+// Convert "aaabbbcc" to "a3b3c2".
+// function change(str){
+//     let compressed = "";
+//     let count = 1;
+//     for(let i=0;i<str.length;i++){
+//         if(str.charAt(i) === str.charAt(i+1)){}
+//         else{
+//             compressed += str.charAt(i) + count;
+//             count = 1;
+//         }
+//         count++;
+//     }
+//     return compressed;
+
+// }
+// console.log(change("aaabbbcc"));
+// ---------------------------------------------------------------------------
+// 34. Check Password Strength
+// Create a function that checks if a password string meets criteria (min 8 chars, contains
+// number, uppercase, lowercase).
+// function password(str){
+//     let pass= "";
+//     if(str.length <= 8){
+//         console.log("weak password");
+//     }
+//     else if(str.length <= 16 ){
+//         console.log("strong password");
+//     }
+//     else if(str.length <= 24 ){
+//         console.log("very strong password");
+//     }
+//     else {
+//         console.log("password is not strong Change the password");
+//     }
+//     return pass.test(str);
+// }
+// console.log(password("Abbasghulam123Askjdah"));
+// ---------------------------------------------------------------------------
+// 35. Extract Hashtags
+// From a social media post, extract all words starting with #.
+// function hashtag(str){
+//     let words = str.split(" ");
+//     let hashtags = [];
+//     for(let i=0;i<words.length;i++){
+//         if(words[i].charAt(0) === "#"){
+//             hashtags.push(words[i]);
+//         }
+//     }
+//     return hashtags;
+// }
+// console.log(hashtag("Apple # "));
+// ---------------------------------------------------------------------------
+// 36. CamelCase Converter
+// Convert a sentence like "make this camel case" to "makeThisCamelCase".
+// function remove(str){
+//     let words = str.split(" ");
+//     let array = [];
+//     array.push(words[0].toLowerCase());
+//     for(let i=0;i<words.length;i++){
+//         array.push(words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase());
+//     }
+//     return array.join("");
+// }
+// console.log(remove("make this camel case"));
+// ---------------------------------------------------------------------------
+// 37. Parse CSV Line
+// Given a CSV string like "name,age,email", return an array of values.
+// function saperate(str){
+//     let array = str.split(",");
+//     return array;
+// }
+// console.log(saperate("name,age,email"));
+// ---------------------------------------------------------------------------
+// 38. Custom Split Without Using split()
+// Write a function that splits a string by a space character without using .split().
+// function custom(str){
+//     let result = [];
+//     let cur = "";
+//     for(let i= 0;i<str.length;i++){
+//         if(str.charAt(i) === " "){
+//             result.push(cur);
+//             cur = "";
+//         }
+//         else{
+//             cur += str.charAt(i);
+//         }
+//     }
+//     result.push(cur);
+//     return result;
+// }
+// console.log(custom("Hello world, how are you"));
+// ---------------------------------------------------------------------------
+// 39. Format Phone Number
+// Given a 10-digit string like "1234567890", return it in the format (123) 456-7890.
+// function number(str){
+//     let arry1 = str.slice(0, 3);
+//     let arry2 = str.slice(3, 6);
+//     let arry3 = str.slice(6, 10);
+//     return `(${arry1}) ${arry2}-${arry3}`;
+
+// }
+// console.log(number("1234567890"));
+// ---------------------------------------------------------------------------
+// 40. Detect Palindromes in Sentence
+// Return all palindromic words in a sentence (e.g., "madam is at civic center" →
+// ["madam", "civic"]).
+// function sentence(str){
+//     let words = str.split(" ");
+//     let poem = [];
+//     for(let i=0;i<words.length;i++){
+//         let rev = words[i].split("").reverse().join("");
+//         if(words[i].toLowerCase() === rev.toLowerCase()){
+//             poem.push(words[i]);
+//         }   
+//     }
+//     return poem;
+// }
+// console.log(sentence("madam is at civic center"));
