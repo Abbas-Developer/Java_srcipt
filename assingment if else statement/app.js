@@ -316,8 +316,6 @@
 // }
 
 // 15 Question 
-
-
 // let browser = "Chrome";
 // let device = "Desktop";
 

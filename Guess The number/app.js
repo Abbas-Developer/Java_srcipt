@@ -15,6 +15,7 @@ function btn() {
     else if (int.value > 10 || int.value < 0) {
         console.log("Please enter a number between 0 and 10");
         result.textContent = "Please enter a number between 0 and 10";
+        alert("Please Enter a Valid Number upto 0 to 10");
     }
     else if (int.value - 1 == num || int.value + 1 == num) {
         console.log("You lose the game. You were near to number is ");
@@ -25,4 +26,10 @@ function btn() {
         result.textContent = "You loss the game. The correct number is " + num;
     }
 
+
+    if(int.value==""){
+        console.log("Please enter a valid number");
+        alert("Please enter a valid number upto 0 to 10");
+
+    }
 }
