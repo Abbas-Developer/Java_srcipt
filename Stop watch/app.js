@@ -42,7 +42,7 @@ function timestart() {
         }
 
 
-    }, 100)
+    }, 1000)
 }
 
 
