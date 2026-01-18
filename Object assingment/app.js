@@ -18,52 +18,72 @@
 
 // 2. Find Top Scorer
 // From a list of student objects with names and scores, find and display the top scorer.
-const student = [
-    {
-        name: "Ahmed",
-        marks: 85
-    },
-    {
-        name: "sibtain",
-        marks: 92
-    },
-    {
-        name: "Ali agha",
-        marks: 78
-    },
-    {
-        name: "Abbas",
-        marks: 95
-    },
-    {
-        name: "Syed Ali",
-        marks: 68
-    },
-    {
-        name: "imran",
-        marks: 97
-    },
-];
-function top(student) {
-    if (student.length === 0) return null;
+// const student = [
+//     {
+//         name: "Ahmed",
+//         marks: 85
+//     },
+//     {
+//         name: "sibtain",
+//         marks: 92
+//     },
+//     {
+//         name: "Ali agha",
+//         marks: 78
+//     },
+//     {
+//         name: "Abbas",
+//         marks: 95
+//     },
+//     {
+//         name: "Syed Ali",
+//         marks: 68
+//     },
+//     {
+//         name: "imran",
+//         marks: 97
+//     },
+// ];
+// function top(student) {
+//     if (student.length === 0) return null;
 
-    let topStudent = student[0]; 
+//     let topStudent = student[0]; 
 
-    for (let i = 1; i < student.length; i++) {
-        if (student[i].marks > topStudent.marks) {
-            topStudent = student[i];
-        }
-    }
-    
-    return topStudent;
-}
-top(student)
+//     for (let i = 1; i < student.length; i++) {
+//         if (student[i].marks > topStudent.marks) {
+//             topStudent = student[i];
+//         }
+//     }
+
+//     return topStudent;
+// }
+// top(student)
 
 
 // 3. Filter Products by Price Range
 // Create a function that takes a min and max price and filters an array of product objects
 // accordingly.
+// const products = [
+//     { name: "Mobile", price: 45000 },
+//     { name: "Laptop", price: 120000 },
+//     { name: "Charger", price: 1500 },
+//     { name: "Earphones", price: 2500 },
+//     { name: "Tablet", price: 35000 },
+//     { name: "Keyboard", price: 3000 }
+// ];
+// function filter(product, minimp, mixp) {
+//     let f = [];
+//     for (let i = 0; i < products.lenth; i++) {
+//         let p = products[i].price;
+//         if (p >= minimp && p <= mixp) {
+//             f.push(products[i]);
+//         }
+//     }
+//     return f ;
 
+// }
+// console.log("1000 se 5000 tak:");
+// console.log(filter(products, 1000, 5000));
 
 
 
@@ -78,13 +98,54 @@ top(student)
 // 5. Group Users by Role
 // Given an array of user objects ({name, role}), group and display users under role
 // headings.
+// const h1 = document.querySelector("#result");
+// const h2 = document.querySelector("#reslutt");
+// const container = document.querySelector("#parent");
 
+// let array = [
+//     {name: " Abbas" , role : 1},
+//     {name: " Syed Ali" , role : 2},
+//     {name: " Sibtain" , role : 3},
+//     {name: " Mustafa" , role : 4}
+// ]
+// for(let i = 0 ;i < array.length; i++){
+//     container.innerHTML += `<h1>Student Name:${array[i].name} | Role number: ${array[i].role}</h1>`
+
+// }
 
 
 // 6. Sort Products by Price
 // Display a list of products sorted by price (ascending/descending toggle via button).
 
+// let products = [
+//     { name: "Mobile", price: 50000 },
+//     { name: "Laptop", price: 80000 },
+//     { name: "Watch", price: 5000 },
+//     { name: "Headphones", price: 2000 }
+// ];
 
+// let isAscending = true;
+// function displayProducts() {
+//     const list = document.querySelector("#product-list");
+//     list.innerHTML = "";
+
+//     for (let i = 0; i < products.length; i++) {
+//         list.innerHTML += `<li>${products[i].name} | Price : ${products[i].price}</li>`
+//     }
+// }
+
+// function sortProducts() {
+//     if (isAscending) {
+//         products.sort((a, b) => a.price - b.price);
+//     } else {
+//         products.sort((a, b) => b.price - a.price);
+//     }
+
+//     isAscending = !isAscending;
+//     displayProducts();
+// }
+
+// displayProducts();
 
 
 
