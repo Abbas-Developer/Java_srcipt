@@ -7,7 +7,7 @@
 </head>
 <body>
      
-    <div id="parent">
+    <!-- <div id="parent">
 
     </div>
    <h2>Product List</h2>
@@ -25,6 +25,27 @@
 
     <h3>Result Object:</h3>
     <pre id="result"></pre>
+    <input type="text" id="userInput" onkeyup="searchHighlight()" placeholder="Search...">
+<div id="container"></div>
+
+    <select id="countryDropdown">
+    <option value="">Select a Country</option>
+</select>
+
+<div id="details" ></div> -->
+
+<form id="userForm">
+    <input type="text" name="name" placeholder="Naam " required><br>
+    <input type="email" name="email" placeholder="Email " required><br>
+    <input type="number" name="age" placeholder="Umar " required><br>
+    <button type="submit">Submit Karo</button>
+</form>
+
+<div id="result"></div>
+
+
+<div class="card" id="user-info"></div>
+
 
     <script src="app.js"></script>
 </body>

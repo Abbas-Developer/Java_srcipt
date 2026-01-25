@@ -1,4 +1,4 @@
-// 🔁 Logic-Based (Objects + Arrays + Loops)
+//  Logic-Based (Objects + Arrays + Loops)
 // 1. Display Student Info
 // Given an array of student objects, display each student’s name and marks in a table
 // using DOM.
@@ -18,7 +18,7 @@
 
 // 2. Find Top Scorer
 // From a list of student objects with names and scores, find and display the top scorer.
-// const student = [
+// const students = [
 //     {
 //         name: "Ahmed",
 //         marks: 85
@@ -95,6 +95,9 @@
 
 
 
+
+
+
 // 5. Group Users by Role
 // Given an array of user objects ({name, role}), group and display users under role
 // headings.
@@ -152,13 +155,26 @@
 // 7. Dynamic Form Inputs to Object
 // Create a form with name, email, and age. On submit, convert the input into an object
 // and show the result.
+// const form = document.querySelector("#userForm");
+// const resultDiv = document.querySelector("#result");
+// form.onsubmit = (e) => {
+//     e.preventDefault();
+//     const formData = new FormData(form);
+//     const userObj = Object.fromEntries(formData);
 
+//     resultDiv.innerHTML = `
+//         <h3>Submitted Data:</h3>
+//         <p><strong>Name:</strong> ${userObj.name}</p>
+//         <p><strong>Email:</strong> ${userObj.email}</p>
+//         <p><strong>Age:</strong> ${userObj.age}</p>
+//     `;
 
-
-
+//     console.log("Final Object:", userObj);
+// };
 // 8. Render Nested Object Data
 // Given a nested object like a user with address, display all info in a structured format in
 // the DOM.
+
 
 
 
@@ -240,18 +256,31 @@
 
 
 
-
 // 18. Sort by Multiple Properties
 // Sort an array of student objects first by grade, then by name if grades are equal.
+// const students = [
+//     { name: "Zeeshan", grade: 80 },
+//     { name: "Aman", grade: 90 },
+//     { name: "Rahul", grade: 80 },
+//     { name: "Suresh", grade: 95 }
+// ];
+// students.sort((a, b) => (b.grade - a.grade) || a.name.localeCompare(b.name));
 
-
+// console.log(students);
 
 // 19. Search and Highlight
 // Search through an array of paragraph texts, highlight matches using DOM manipulation.
-
-
-
-
 // 20. Custom Dropdown from Object Data
 // Use a country object ({code: "IN", name: "India"}) to populate a dropdown. On
 // select, show selected country's details.
+// 1. Hamara data
+// 1. Data Object
+// const countries = [
+//     { code: "IN", name: "India" },
+//     { code: "US", name: "USA" },
+//     { code: "GB", name: "UK" }
+// ];
+// const dropdown = document.querySelector("#countryDropdown");
+// for (let i = 0; i < countries.length; i++) {
+//     dropdown.innerHTML += `<option value="${countries[i].code}">${countries[i].name}</option>`;
+// }
