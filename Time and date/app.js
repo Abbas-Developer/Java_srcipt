@@ -1,7 +1,17 @@
 // 1. Custom Date Formatter
 // Write a function that takes a Date object and returns a formatted string like:
 // "Saturday, 9 August 2025".
-
+function formatdate(d) {
+    const options = { 
+        weekday: 'long', 
+        day: 'numeric', 
+        month: 'long', 
+        year: 'numeric' 
+    };
+    return d.toLocaleDateString('en-gb', options);
+}
+const today = new Date();
+console.log(formatdate(today));
  
 // 2. Elapsed Time in Minutes
 // Given two timestamps, calculate how many minutes have passed between them.
